@@ -1,0 +1,156 @@
+@{
+    ViewData["Title"] = "Cadastramento";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cadastrar lojas</h1>
+</div>
+
+ <div class="container">
+        <div class="con">
+            <div class="right-side">
+                <br>
+                <p>
+                    Preencha o formulário e cadastre agora sua loja/kiosque!
+                </p>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Digite o número de identificação" />
+                    </div>
+                    
+                    <div class="input-box">
+                        <select name="input-box">
+                            <option value="valor1" selected>piso 1</option>
+                            <option value="valor2">piso 2</option>
+                            <option value="valor3">piso 3</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="text" placeholder="Digite o nome da loja/kiosque" />
+                    </div>
+                    
+                    <div class="input-box message-box">
+                        <textarea placeholder="Descreva sua loja/kiosque"></textarea>
+                    </div>
+                    
+                    <div class="input-box">
+                        <select name="input-box">
+                            <option value="valor1" selected>Loja</option>
+                            <option value="valor2">Kiosque</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Digite o seu email" />
+                    </div>
+                    
+                    <div class="button">
+                        <input type="button" value="Cadastrar" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<style>
+container{
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    
+}
+.container .con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .con .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.con .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #98857E;
+}
+.con .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+.con .left-side .details i{
+    font-size: 30px;
+    color: #90562E;
+    margin-bottom: 10px;
+}
+.con .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.con .left-side .details .text-one,
+.con .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+ }
+.container .con .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+.con .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #90562E;
+}
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+.right-side .message-box{
+    min-height: 110px;
+}
+.right-side .input-box textarea{
+    padding-top: 6px;
+}
+.right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #90562E;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+    background: #C1AC9C;
+}
+</style>
